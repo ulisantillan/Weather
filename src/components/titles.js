@@ -8,7 +8,7 @@ class Titles extends React.Component {
 
             <div>
                 <h1>Crazy Weather</h1>
-                <p> Helps you find weather conditions in cities around the world...  </p>
+                <p> When It's Crazy We Have The Weather...  </p>
             </div>
         )
     }

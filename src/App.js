@@ -2,6 +2,7 @@ import React from "react";
 import Weather from "./components/weather";
 import Form from "./components/form";
 import Titles from "./components/titles";
+import { Container } from 'reactstrap';
 
 const Api_Key = "b2bb901c7293cdfaa25ad966378aa558";
 
@@ -47,18 +48,22 @@ class App extends React.Component{
    render(){
     return(
       <div>
-        <Titles />
-        <Form loadWeather={this.getWeather} />
-        <Weather
-          temperature={this.state.temperature}
-          pressure={this.state.pressure}
-          city={this.state.city}
-          country={this.state.country}
-          humidity={this.state.humidity}
-          description={this.state.description}
-          wind={this.state.wind}
-          error={this.state.error}
-        />
+      <div className="background">
+        <Container >
+          <Titles />
+          <Form loadWeather={this.getWeather} />
+          <Weather
+            temperature={this.state.temperature}
+            pressure={this.state.pressure}
+            city={this.state.city}
+            country={this.state.country}
+            humidity={this.state.humidity}
+            description={this.state.description}
+            wind={this.state.wind}
+            error={this.state.error}
+          />
+        </Container>
+        </div>
       </div>
    )
   }
