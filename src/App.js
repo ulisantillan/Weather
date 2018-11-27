@@ -6,12 +6,19 @@ import Titles from "./components/titles";
 const Api_Key = "b2bb901c7293cdfaa25ad966378aa558";
 
 class App extends React.Component{
+
   state = {
+    temperature: undefined,
+    pressure: undefined,
     city: undefined,
     country: undefined,
+    humidity: undefined,
+    description: undefined,
+    wind: undefined,
     error: undefined
   }
-  //async method to call api
+
+  //function to call api
   getWeather = async (e) => {
   const city = e.target.elements.city.value;
   const country = e.target.elements.country.value;
@@ -21,8 +28,13 @@ class App extends React.Component{
   console.log(response);
   if(city && country){
     this.setState({
+      temperature: Math.round((response.main.temp) - 273.15) + "° C" + " ~ " +(Math.round(((response.main.temp) -273.15)*1.8)+32) + "° F",
+      pressure: response.main.pressure + " "+ "mb",
       city: response.name,
       country: response.sys.country,
+      humidity: response.main.humidity + "%",
+      description: response.weather[0].description,
+      wind: response.wind.speed,
       error: ""
     })
 
@@ -38,10 +50,15 @@ class App extends React.Component{
         <Titles />
         <Form loadWeather={this.getWeather} />
         <Weather
+          temperature={this.state.temperature}
+          pressure={this.state.pressure}
           city={this.state.city}
           country={this.state.country}
+          humidity={this.state.humidity}
+          description={this.state.description}
+          wind={this.state.wind}
           error={this.state.error}
-                />
+        />
       </div>
    )
   }
