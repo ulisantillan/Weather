@@ -49,19 +49,23 @@ class App extends React.Component{
     return(
       <div>
       <div className="background">
-        <Container >
-          <Titles />
-          <Form loadWeather={this.getWeather} />
-          <Weather
-            temperature={this.state.temperature}
-            pressure={this.state.pressure}
-            city={this.state.city}
-            country={this.state.country}
-            humidity={this.state.humidity}
-            description={this.state.description}
-            wind={this.state.wind}
-            error={this.state.error}
-          />
+        <Container className="mainContainer" >
+          <Container className="titleContainer">
+            <Titles />
+            <Form loadWeather={this.getWeather} />
+          </Container>
+          <Container className="weatherContainer">
+            <Weather
+              temperature={this.state.temperature}
+              pressure={this.state.pressure}
+              city={this.state.city}
+              country={this.state.country}
+              humidity={this.state.humidity}
+              description={this.state.description}
+              wind={this.state.wind}
+              error={this.state.error}
+            />
+            </Container>
         </Container>
         </div>
       </div>
