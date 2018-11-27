@@ -8,7 +8,8 @@ To start the app:
     3.npm start
     4.Then open up your browser to http://localhost:3000, and you will be able to see the project.
 
-    [Weather Demo](https://www.youtube.com/watch?v=Z7_ATyagA4Q&feature=youtu.be)
+    [Weather DEMO]
+    https://www.youtube.com/watch?v=Z7_ATyagA4Q&feature=youtu.be
 
 
 
