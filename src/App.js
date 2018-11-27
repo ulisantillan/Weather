@@ -3,6 +3,7 @@ import Weather from "./components/weather";
 import Form from "./components/form";
 import Titles from "./components/titles";
 import { Container } from 'reactstrap';
+import Clock from 'react-live-clock';
 
 const Api_Key = "b2bb901c7293cdfaa25ad966378aa558";
 
@@ -51,6 +52,7 @@ class App extends React.Component{
       <div className="background">
         <Container className="mainContainer" >
           <Container className="titleContainer">
+            <Clock format={'dddd, MMMM Mo, YYYY, h:mm:ss A'} ticking={true} timezone={'America/Mexico City'} interval={10}  />
             <Titles />
             <Form loadWeather={this.getWeather} />
           </Container>

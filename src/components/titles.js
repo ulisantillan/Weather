@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from 'reactstrap';
 
 class Titles extends React.Component {
 
@@ -7,8 +8,10 @@ class Titles extends React.Component {
         return (
 
             <div>
-                <h1>Crazy Weather</h1>
-                <p> When It's Crazy We Have The Weather...  </p>
+              <Container className="containerBox">
+                <h1 className="title">Crazy Weather</h1>
+                <p className="title2"> When It's Crazy We Have The Weather...  </p>
+              </Container>
             </div>
         )
     }
