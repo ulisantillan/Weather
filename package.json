@@ -4,16 +4,29 @@
   "description": "Weather around the world",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ulisantillan/Weather.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ulises Santillan",
+  "license": "GPL",
   "bugs": {
     "url": "https://github.com/ulisantillan/Weather/issues"
   },
-  "homepage": "https://github.com/ulisantillan/Weather#readme"
+  "homepage": "https://github.com/ulisantillan/Weather#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "^2.1.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
