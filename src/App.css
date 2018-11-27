@@ -1,5 +1,3 @@
-
-
 .background {
   background: linear-gradient(to right, #e4eced, rgba(210, 233, 237, 0.06));
   height: 100vh;
@@ -41,7 +39,7 @@
 input[type="text"] {
   background-color: transparent;
   border: 0;
-  border-bottom: solid 1px #49aee9;
+  border-bottom: solid 1px black;
   width: 30%;
   padding-bottom: 4px;
   color: #fff !important;
@@ -87,8 +85,6 @@ button {
 
 .weather__key {
   color: #49aee9;
-  border-bottom: solid 1px black;
-  padding: 14px 0 14px 0;
   font-weight: 400;
 }
 
@@ -101,4 +97,49 @@ button {
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 200;
+}
+.locationContainer{
+  background: #dee9ec;
+  width: 33.333%;
+  position: absolute;
+  height: 50%;
+  left: 0px;
+}
+.tempContainer{
+  background: #dee9ec;
+  width: 33.333%;
+  position:absolute;
+  height: 50%;
+  right: 341.7px;
+}
+.pressureContainer{
+  background: #dee9ec;
+  width: 33.333%;
+  position:absolute;
+  height: 50%;
+  right: 0px;
+}
+.humidityContainer{
+  background: #dee9ec;
+  width: 33.333%;
+  position:absolute;
+  height: 50%;
+  bottom: 0px;
+  right: 0px;
+}
+.conditionsContainer{
+  background: #dee9ec;
+  width: 33.333%;
+  position:absolute;
+  height: 50%;
+  bottom: 0px;
+  right: 341.7px;
+}
+.windContainer{
+  background: #dee9ec;
+  height: 50%;
+  width: 33.333%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
