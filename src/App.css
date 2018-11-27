@@ -143,3 +143,29 @@ button {
   bottom: 0px;
   left: 0px;
 }
+.Img{
+  height: 130px;
+  position: absolute;
+  bottom: 25px;
+  right: 150px;
+}
+.Img1{
+  height: 150px;
+  position: absolute;
+  bottom: 25px;
+  right: 150px;
+}
+.Img2{
+  height: 180px;
+  width: 170px;
+  position: absolute;
+  bottom: 0px;
+  right: 130px;
+}
+.Img3{
+  height: 200px;
+  width: 170px;
+  position: absolute;
+  bottom: 0px;
+  right: 130px;
+}
