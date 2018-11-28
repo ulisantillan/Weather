@@ -9,7 +9,10 @@ To start the app:
     4.Then open up your browser to http://localhost:3000, and you will be able to see the project.
 
     [Weather DEMO]
-    https://www.youtube.com/watch?v=Z7_ATyagA4Q&feature=youtu.be
+
+    <a href="http://www.youtube.com/watch?feature=player_embedded&v=Z7_ATyagA4Q
+" target="_blank"><img src="http://img.youtube.com/vi/Z7_ATyagA4Q/0.jpg"
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 
