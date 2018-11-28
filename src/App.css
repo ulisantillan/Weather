@@ -1,3 +1,5 @@
+ body{margin: 0; height: 100%; overflow: hidden}
+
 .background {
   background: linear-gradient(to right, #e4eced, rgba(210, 233, 237, 0.06));
   height: 100vh;
