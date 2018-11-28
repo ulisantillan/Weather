@@ -10,7 +10,8 @@ To start the app:
 
     [Weather DEMO]
 
-    <a href="http://www.youtube.com/watch?feature=player_embedded&v=Z7_ATyagA4Q"><img src="http://img.youtube.com/vi/Z7_ATyagA4Q/0.jpg"
+    <a href="http://www.youtube.com/watch?feature=player_embedded&v=Z7_ATyagA4Q
+" target="_blank"><img src="http://img.youtube.com/vi/Z7_ATyagA4Q/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="440" height="380" border="5" /></a>
 
 
